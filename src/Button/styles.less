@@ -1,0 +1,27 @@
+@buttonPrefixCls: simple-ui-react-button;
+.@{buttonPrefixCls} {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: 0;
+  font-size: @font-size-4;
+  border-radius: @radius-1;
+  color: @buttonColor;
+  background-color: @buttonBgColor;
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 1;
+  }
+  &-disabled {
+    &:disabled {
+      opacity: 1;
+      color: @text-3;
+      background-color: @bg-3;
+      cursor: not-allowed;
+    }
+  }
+}

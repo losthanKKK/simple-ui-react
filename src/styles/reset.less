@@ -1,0 +1,86 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary, time, mark, audio, video, button{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+button{
+  display: inline-block;
+  -webkit-appearance: none;
+}
+html{
+  height: 100%;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+body {
+  height: 100%;
+  font-size: @font-size-4;
+  line-height:1.2;
+  font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+*,:after,:before {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+}
+i{
+  font-style: normal;
+}
+article,aside,details,figcaption,figure, footer,header,menu,nav,section {
+  display:block;
+}
+
+ul {
+  list-style:none;
+}
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+input, textarea, select, button {
+  padding: 0;
+  vertical-align:middle;
+  font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+input:disabled, textarea:disabled{
+  color: @black-light;
+}
+::-webkit-input-placeholder {
+  color: @grey-500;
+}
+:focus,a {
+  outline: none;
+}
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}

@@ -1,0 +1,88 @@
+/**
+ * https://github.com/google/material-design-icons/releases/tag/3.0.1
+ */
+@icon-css-prefix: simple-ui-react-icon;
+@font-face {
+  font-family: "Simple-ui-reactIcon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./font/MaterialIcons-Regular.eot");
+  src: url("./font/MaterialIcons-Regular.eot") format("embedded-opentype"), url("./font/MaterialIcons-Regular.woff") format("woff"), url("./font/MaterialIcons-Regular.ttf") format("truetype"), url("./font/MaterialIcons-Regular.svg") format("svg");
+}
+
+.@{icon-css-prefix} {
+  font-family: "Simple-ui-reactIcon" !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke-width: 0.2px;
+}
+
+// Animated Icons
+// --------------------------
+
+.@{icon-css-prefix}-spin {
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
+}
+
+.@{icon-css-prefix}-pulse {
+  -webkit-animation: icon-spin 1s infinite steps(8);
+  animation: icon-spin 1s infinite steps(8);
+}
+
+.@{icon-css-prefix}-fw {
+  width: (18em / 14);
+  text-align: center;
+}
+
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.@{icon-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+.@{icon-css-prefix}-2x { font-size: 2em; }
+.@{icon-css-prefix}-3x { font-size: 3em; }
+.@{icon-css-prefix}-4x { font-size: 4em; }
+.@{icon-css-prefix}-5x { font-size: 5em; }
+
+
+@-webkit-keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

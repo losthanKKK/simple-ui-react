@@ -1,0 +1,15 @@
+.bg-mask(@bg-color: @black-dark) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: @bg-color;
+  height: 100%;
+}
+
+.scroll(@name:overflow) {
+    @{name}: auto;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
